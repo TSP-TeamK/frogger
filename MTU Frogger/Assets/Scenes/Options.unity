@@ -1423,7 +1423,7 @@ GameObject:
   - component: {fileID: 1924161735}
   - component: {fileID: 1924161736}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Sound Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
