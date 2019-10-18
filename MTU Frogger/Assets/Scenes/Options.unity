@@ -601,11 +601,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355920884}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &611502713
-=======
---- !u!1 &625792136
->>>>>>> parent of 95c010a... sounds slider
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -613,31 +609,20 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 611502714}
   m_Layer: 5
   m_Name: GameObject
-=======
-  - component: {fileID: 625792137}
-  m_Layer: 5
-  m_Name: Fill Area
->>>>>>> parent of 95c010a... sounds slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &611502714
-=======
---- !u!224 &625792137
->>>>>>> parent of 95c010a... sounds slider
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 611502713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -687,22 +672,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
-  m_GameObject: {fileID: 625792136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1170437646}
-  m_Father: {fileID: 2077625358}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
->>>>>>> parent of 95c010a... sounds slider
 --- !u!1 &1010072949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,10 +1484,7 @@ RectTransform:
   - {fileID: 2077625358}
   - {fileID: 1609612733}
   - {fileID: 1048646064}
-<<<<<<< HEAD
   - {fileID: 611502714}
-=======
->>>>>>> parent of 95c010a... sounds slider
   m_Father: {fileID: 1038779088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.15300001}
