@@ -1529,15 +1529,11 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1403256727}
   m_Direction: 0
   m_MinValue: 0
-<<<<<<< HEAD
+
   m_MaxValue: 10
   m_WholeNumbers: 1
   m_Value: 10
-=======
-  m_MaxValue: 10
-  m_WholeNumbers: 1
-  m_Value: 10
->>>>>>> 176fb43127297e2aab9ca21dcb288413dcce9df2
+
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
