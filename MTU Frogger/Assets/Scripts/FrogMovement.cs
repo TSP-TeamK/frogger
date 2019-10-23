@@ -2,43 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class FrogMovement : MonoBehaviour
 {
 
-    //a rigid body for the frog
-    Rigidbody2D frog = new Rigidbody2D();
-    //set speed for frog
-    public float speed = 2.0f;
+    //declare local variables
+    public float moveSpeed;
+    private Animator anim;
 
-    // Start is called before the first frame update
+    private bool playerMoving;
+    private Vector2 lastMove;
+
     void Start()
     {
-        //get the frog Rigidbody2D
-        frog = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //get right key
-        if (Input.GetKey(KeyCode.RightArrow))
+        //player is default still at start
+        playerMoving = false;
+
+        //if horizontal movement is detected
+        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
-            frog.velocity = transform.right * speed;
+            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+            playerMoving = true;
+            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
         }
-        //get left key
-        if (Input.GetKey(KeyCode.LeftArrow))
+
+        //if vertical movement is detected
+        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
-            frog.velocity = -transform.right * speed;
+            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
+            playerMoving = true;
+            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
         }
-        //get up key
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            frog.velocity = transform.up * speed;
-        }
-        //get down key
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            frog.velocity = -transform.up * speed;
-        }
+
+        //set variables for movement
+        anim.SetFloat("Move X", Input.GetAxisRaw("Horizontal"));
+        anim.SetFloat("Move Y", Input.GetAxisRaw("Vertical"));
+        anim.SetBool("PlayerMoving", playerMoving);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
+
     }
 }
