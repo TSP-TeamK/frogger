@@ -441,7 +441,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YEET THE GAME
+  m_Text: Husky Hustle
 --- !u!222 &511265351
 CanvasRenderer:
   m_ObjectHideFlags: 0
