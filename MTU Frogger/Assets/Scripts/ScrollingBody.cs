@@ -29,15 +29,13 @@ public class ScrollingBody : MonoBehaviour
     // Start is called before the first frame update
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "character")
+        if (collision.gameObject.name == "character")
         {
             Rigidbody2D character = collision.rigidbody;
-            Rigidbody2D car = collision.otherRigidbody;
             character.position = restart;
             character.velocity = new Vector2(0, 0);
-            car.velocity = new Vector2(2.0f, 0);
-
         }
 
     }
+
 }
