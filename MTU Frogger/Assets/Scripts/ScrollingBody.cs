@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
-    private Vector2 newPos = new Vector2(-12.0f, 0.0f);
+    private Vector2 newPos;
     private Vector2 restart = new Vector2(0, -4);
     void Start()
     {
@@ -20,6 +20,8 @@ public class ScrollingBody : MonoBehaviour
     {
         //if (GameControl.instance.gameOver = true) {rb2d.velocity = Vector2.zero}
         //We don't currently have a gameOver thing
+
+        newPos = new Vector2(-12.0f, rb2d.position.y);
 
         if( rb2d.position.x >= 13f)
         {
