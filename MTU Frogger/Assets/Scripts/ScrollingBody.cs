@@ -6,7 +6,7 @@ public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     private Vector2 newPos;
-    private Vector2 restart = new Vector2(0, -4);
+    private Vector2 restart = new Vector2(-2, 53);
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // get reference
