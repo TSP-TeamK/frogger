@@ -26,7 +26,7 @@ public class FrogMovement : MonoBehaviour
         playerMoving = false;
 
         //if horizontal movement is detected
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        if ((Input.GetAxisRaw("Horizontal") > 0.5f  && body.position.x < GlobalVariables.Xvalue) || (Input.GetAxisRaw("Horizontal") < -0.5f && body.position.x > GlobalVariables.negXvalue))
         {
             body.velocity = ( new Vector2(1,0) * Input.GetAxis("Horizontal")) * moveSpeed * Time.fixedDeltaTime;
             playerMoving = true;
@@ -34,7 +34,7 @@ public class FrogMovement : MonoBehaviour
         }
 
         //if vertical movement is detected
-        else if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+        else if (Input.GetAxisRaw("Vertical") > 0.5f || (Input.GetAxisRaw("Vertical") < -0.5f && body.position.y > GlobalVariables.negYvalue))
         {
             body.velocity = (transform.up * Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
             playerMoving = true;
