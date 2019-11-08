@@ -6,13 +6,22 @@ public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     private Vector2 newPos;
-    private Vector2 restart = new Vector2(-2, 53);
+    private Vector2 restart = new Vector2(-2, 50);
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // get reference
         //set velocity
-        rb2d.velocity = new Vector2(2.0f, 0); //could use 1.5f as a public variable later 
-                                                // so all cars move same speed
+        //if the rigidbody is rotated, then go the different direction
+        if (rb2d.transform.rotation.y == 0f)
+        {
+            rb2d.velocity = new Vector2(2.0f, 0);
+        }
+        else
+        {
+            //could use 1.5f as a public variable later 
+            // so all cars move same speed
+            rb2d.velocity = new Vector2(-2.0f, 0); 
+        }
     }
 
     // Update is called once per frame
