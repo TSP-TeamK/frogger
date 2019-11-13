@@ -8,7 +8,6 @@ public class sceneLink : MonoBehaviour
     public void SceneLoader(int SceneIndex)
     {
 
-
         SceneManager.LoadScene(SceneIndex);
 
     } 

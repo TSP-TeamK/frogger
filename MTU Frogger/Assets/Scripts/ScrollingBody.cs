@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     private Vector2 newPos;
     private Vector2 restart = new Vector2(-2, 50);
-    void Start()
+    public void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // get reference
         //set velocity
@@ -48,5 +49,6 @@ public class ScrollingBody : MonoBehaviour
         }
 
     }
+
 
 }
