@@ -8,7 +8,16 @@ public class ScrollingBody : MonoBehaviour
     public Rigidbody2D rb2d;
     private Vector2 newPos;
     private Vector2 newPos1;
-    private Vector2 restart = new Vector2(-2, 50);
+    private Vector2 restart;
+    private GameObject player;
+
+    private void Awake()
+    {
+        //stores the player initial position as the restart position
+        player = GameObject.Find("character");
+        restart = player.transform.position;
+    }
+
     public void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // get reference
