@@ -6,6 +6,7 @@ public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     private Vector2 newPos;
+    private Vector2 newPos1;
     private Vector2 restart = new Vector2(-2, 50);
     void Start()
     {
@@ -31,10 +32,19 @@ public class ScrollingBody : MonoBehaviour
         //We don't currently have a gameOver thing
 
         newPos = new Vector2(-12.0f, rb2d.position.y);
+        newPos1 = new Vector2(12.0f, rb2d.position.y);
 
-        if( rb2d.position.x >= 13f)
+        if ((rb2d.transform.rotation.y == 0f)) { 
+            if (rb2d.position.x >= 13f)
+            {
+                rb2d.position = newPos;
+            }
+        }
+        else
         {
-            rb2d.position = newPos;
+            if (rb2d.position.x <= -13f) {
+                rb2d.position = newPos1;
+            }
         }
     }
     // Start is called before the first frame update
