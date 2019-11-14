@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FrogMovement : MonoBehaviour
 {
 
@@ -13,6 +13,8 @@ public class FrogMovement : MonoBehaviour
     private bool playerMoving;
     private Vector2 lastMove;
 
+    public int SceneIndex;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -20,7 +22,7 @@ public class FrogMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //player is default still at start
         playerMoving = false;
@@ -52,4 +54,24 @@ public class FrogMovement : MonoBehaviour
 
     }
 
+    public Vector2 getFrogVelocity(Rigidbody2D body)
+    {
+        return body.velocity;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Edge Tilemap")
+        {
+            
+            SceneManager.LoadScene(SceneIndex);
+        }
+    }
+
+    public void SceneLoader(int SceneIndex)
+    {
+
+        SceneManager.LoadScene(SceneIndex);
+
+    }
 }
