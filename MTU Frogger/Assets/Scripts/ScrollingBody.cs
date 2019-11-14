@@ -6,8 +6,18 @@ public class ScrollingBody : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     private Vector2 newPos;
-    private Vector2 restart = new Vector2(GlobalVariables.respawnX, GlobalVariables.respawnY);
-    void Start()
+    private Vector2 newPos1;
+    private Vector2 restart;
+    private GameObject player;
+
+    private void Awake()
+    {
+        //stores the player initial position as the restart position
+        player = GameObject.Find("character");
+        restart = player.transform.position;
+    }
+
+    public void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // get reference
         //set velocity
@@ -31,10 +41,20 @@ public class ScrollingBody : MonoBehaviour
         //We don't currently have a gameOver thing
 
         newPos = new Vector2(-12.0f, rb2d.position.y);
-
-        if( rb2d.position.x >= 13f)
+        newPos1 = new Vector2(12.0f, rb2d.position.y);
+        if (rb2d.transform.rotation.y == 0f)
         {
-            rb2d.position = newPos;
+            if (rb2d.position.x >= 13f)
+            {
+                rb2d.position = newPos;
+            }
+        }
+        else
+        {
+            if (rb2d.position.x <= -13f)
+            {
+                rb2d.position = newPos1;
+            }
         }
     }
     // Start is called before the first frame update
