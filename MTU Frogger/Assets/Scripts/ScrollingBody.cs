@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class ScrollingBody : MonoBehaviour
 {
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     private Vector2 newPos;
     private Vector2 newPos1;
     private Vector2 restart;
-    private GameObject player;
+    public GameObject player;
 
     private void Awake()
     {
         //stores the player initial position as the restart position
-        player = GameObject.Find("character");
+        // player = GameObject.Find("character");
+        if (player == null)
+        {
+            player = Instantiate(Resources.Load<GameObject>("Prefab/character"));
+        }
         restart = player.transform.position;
+
     }
 
     public void Start()
@@ -37,8 +42,6 @@ public class ScrollingBody : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (GameControl.instance.gameOver = true) {rb2d.velocity = Vector2.zero}
-        //We don't currently have a gameOver thing
 
         newPos = new Vector2(-12.0f, rb2d.position.y);
         newPos1 = new Vector2(12.0f, rb2d.position.y);
@@ -67,6 +70,11 @@ public class ScrollingBody : MonoBehaviour
             character.velocity = new Vector2(0, 0);
         }
 
+    }
+
+    public Rigidbody2D getRb2d()
+    {
+        return rb2d;
     }
 
 }

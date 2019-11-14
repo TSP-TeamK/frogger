@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4590760345019021097}
   - component: {fileID: 4590760345019021096}
   m_Layer: 10
-  m_Name: Truck
+  m_Name: Truck1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 1364893189
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1091162576184757197, guid: 612019ff588b5c44ba7baff7a80f7e03,
+  m_Sprite: {fileID: -6603089004784678211, guid: 612019ff588b5c44ba7baff7a80f7e03,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 4590760345019021102}
+  player: {fileID: 3902348310973407671, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
 --- !u!61 &4590760345019021096
 BoxCollider2D:
   m_ObjectHideFlags: 0

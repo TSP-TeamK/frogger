@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 4590760345019021102}
+  player: {fileID: 3902348310973407671, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
 --- !u!61 &4590760345019021096
 BoxCollider2D:
   m_ObjectHideFlags: 0

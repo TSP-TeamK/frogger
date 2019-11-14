@@ -270,6 +270,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4590760345019021097, guid: 792dbaafee14fa94abbd63418a8ea105,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3902348310958843457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 792dbaafee14fa94abbd63418a8ea105, type: 3}
 --- !u!1001 &58451853
@@ -349,6 +354,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.839047
       objectReference: {fileID: 0}
+    - target: {fileID: 4590760345019021097, guid: 820735ec779ae8947a14fda30075397b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3902348310958843457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820735ec779ae8947a14fda30075397b, type: 3}
 --- !u!1 &220652163
@@ -8262,6 +8272,11 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4590760345019021097, guid: 2bd3fe0919af72241a45369052d01865,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3902348310958843457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bd3fe0919af72241a45369052d01865, type: 3}
 --- !u!1 &1679099154
@@ -8479,7 +8494,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0.14590502, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -9683,6 +9698,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.826918
       objectReference: {fileID: 0}
+    - target: {fileID: 4590760345019021097, guid: 6e714839e32426647b7b287bfb7d0ab6,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3902348310958843457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e714839e32426647b7b287bfb7d0ab6, type: 3}
 --- !u!4 &2078124259 stripped
@@ -10902,7 +10922,13 @@ PrefabInstance:
     - target: {fileID: 3902348310973407676, guid: 0ca5038bb264e6647ad580979a4a0986,
         type: 3}
       propertyPath: SceneIndex
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
+--- !u!1 &3902348310958843457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3902348310973407671, guid: 0ca5038bb264e6647ad580979a4a0986,
+    type: 3}
+  m_PrefabInstance: {fileID: 3902348310958843456}
+  m_PrefabAsset: {fileID: 0}
