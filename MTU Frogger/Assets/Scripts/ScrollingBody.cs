@@ -13,10 +13,13 @@ public class ScrollingBody : MonoBehaviour
     private void Awake()
     {
         //stores the player initial position as the restart position
-        // player = GameObject.Find("character");
         if (player == null)
         {
             player = Instantiate(Resources.Load<GameObject>("Prefab/character"));
+        }
+        else
+        {
+            player = GameObject.Find("character");
         }
         restart = player.transform.position;
 
