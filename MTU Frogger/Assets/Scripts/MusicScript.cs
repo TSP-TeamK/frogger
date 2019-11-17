@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MusicScript : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class MusicScript : MonoBehaviour
 
     private void Update()
     {
-        if(!audioSource.isPlaying)
+        if (!audioSource.isPlaying)
         {
             playRandomMusic();
         }
