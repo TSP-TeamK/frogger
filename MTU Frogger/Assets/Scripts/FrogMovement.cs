@@ -1,44 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Movement : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class FrogMovement : MonoBehaviour
 {
 
-    //a rigid body for the frog
-    Rigidbody2D frog = new Rigidbody2D();
-    //set speed for frog
-    public float speed = 2.0f;
+    //declare local variables
+    public float moveSpeed;
+    private Animator anim;
+    private Rigidbody2D body;
 
-    // Start is called before the first frame update
+    private bool playerMoving;
+    private Vector2 lastMove;
+
+    public int SceneIndex;
+
     void Start()
     {
-        //get the frog Rigidbody2D
-        frog = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        //get right key
-        if (Input.GetKey(KeyCode.RightArrow))
+        //player is default still at start
+        playerMoving = false;
+
+        //if horizontal movement is detected
+        if ((Input.GetAxisRaw("Horizontal") > 0.5f  && body.position.x < GlobalVariables.Xvalue) || (Input.GetAxisRaw("Horizontal") < -0.5f && body.position.x > GlobalVariables.negXvalue))
         {
-            frog.velocity = transform.right * speed;
+            body.velocity = ( new Vector2(1,0) * Input.GetAxis("Horizontal")) * moveSpeed * Time.fixedDeltaTime;
+            playerMoving = true;
+            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
         }
-        //get left key
-        if (Input.GetKey(KeyCode.LeftArrow))
+
+        //if vertical movement is detected
+        else if (Input.GetAxisRaw("Vertical") > 0.5f || (Input.GetAxisRaw("Vertical") < -0.5f && body.position.y > GlobalVariables.negYvalue))
         {
-            frog.velocity = -transform.right * speed;
+            body.velocity = (transform.up * Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
+            playerMoving = true;
+            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
         }
-        //get up key
-        if (Input.GetKey(KeyCode.UpArrow))
+
+        else body.velocity = new Vector2(0,0);
+
+        //set variables for movement
+        anim.SetFloat("Move X", Input.GetAxisRaw("Horizontal"));
+        anim.SetFloat("Move Y", Input.GetAxisRaw("Vertical"));
+        anim.SetBool("PlayerMoving", playerMoving);
+        anim.SetFloat("LastMoveX", lastMove.x);
+        anim.SetFloat("LastMoveY", lastMove.y);
+
+    }
+
+    public Vector2 getFrogVelocity(Rigidbody2D body)
+    {
+        return body.velocity;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Edge Tilemap")
         {
-            frog.velocity = transform.up * speed;
+            
+            SceneManager.LoadScene(SceneIndex);
         }
-        //get down key
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            frog.velocity = -transform.up * speed;
-        }
+    }
+
+    public void SceneLoader(int SceneIndex)
+    {
+
+        SceneManager.LoadScene(SceneIndex);
+
     }
 }

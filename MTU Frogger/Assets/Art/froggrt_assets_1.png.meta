@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: ec4303a2480a0c7409d10aa4ad3d7a4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1617496937621968235
+    second: froggrt_assets_1_0
+  - first:
+      213: 738416423407153486
+    second: froggrt_assets_1_1
+  - first:
+      213: 3142653484387465574
+    second: froggrt_assets_1_2
+  - first:
+      213: 539576095708870198
+    second: froggrt_assets_1_3
+  - first:
+      213: 5455958363055369993
+    second: froggrt_assets_1_4
+  - first:
+      213: 3868246747707417797
+    second: froggrt_assets_1_5
+  - first:
+      213: 6175532086018394364
+    second: froggrt_assets_1_6
+  - first:
+      213: 7317169603976480985
+    second: froggrt_assets_1_7
+  - first:
+      213: 6682825084224660747
+    second: froggrt_assets_1_8
+  - first:
+      213: 7985304497725515193
+    second: froggrt_assets_1_9
+  - first:
+      213: -1731806964411442147
+    second: froggrt_assets_1_10
+  - first:
+      213: 2100485915032890151
+    second: froggrt_assets_1_11
+  - first:
+      213: -5329633519908855737
+    second: froggrt_assets_1_12
+  - first:
+      213: 3315103055402229882
+    second: froggrt_assets_1_13
+  - first:
+      213: 6331051639141204471
+    second: froggrt_assets_1_14
+  - first:
+      213: 8811963930388518497
+    second: froggrt_assets_1_15
+  - first:
+      213: -3517003323671097207
+    second: froggrt_assets_1_16
+  - first:
+      213: -774641640415424492
+    second: froggrt_assets_1_17
+  - first:
+      213: -5493555236963459755
+    second: froggrt_assets_1_18
+  - first:
+      213: 1008274378644797290
+    second: froggrt_assets_1_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: froggrt_assets_1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 131
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5186937, y: 0.28727722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31c63646cf06ff47ba1a3a8fe45e4a1
+      internalID: -1617496937621968235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 138
+        width: 18
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49999958, y: 0.40652975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c07d72a1787e6141a5fe6b415c759a6
+      internalID: 738416423407153486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 131
+        width: 30
+        height: 28
+      alignment: 9
+      pivot: {x: 0.51869327, y: 0.32975277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3469a5992887ea428d183a1ff2f0d99
+      internalID: 3142653484387465574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 131
+        width: 29
+        height: 28
+      alignment: 9
+      pivot: {x: 0.52628756, y: 0.36855888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156e7b1f81e66a14ca78c1e7b2e427e7
+      internalID: 539576095708870198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 100
+        width: 24
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5116835, y: 0.2195932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065f75111eb1d774d81a524138242e21
+      internalID: 5455958363055369993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 100
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.4999996, y: 0.31773528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1d68fe740540343a34605e3744781e
+      internalID: 3868246747707417797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 99
+        width: 17
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5164943, y: 0.26386783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce49ce3a9dc7bc4db43ef9ae467f816
+      internalID: 6175532086018394364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 99
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.52628756, y: 0.2809322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ad590c86757c649aef3d82b7092c71
+      internalID: 7317169603976480985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 69
+        width: 27
+        height: 20
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.21959305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dae8a8dfbfc4f4fbaaa3592ffa448c
+      internalID: 6682825084224660747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 69
+        width: 27
+        height: 21
+      alignment: 9
+      pivot: {x: 0.56231236, y: 0.31306204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d169634b53b8ac4b9c5274ace83e408
+      internalID: 7985304497725515193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 69
+        width: 27
+        height: 21
+      alignment: 9
+      pivot: {x: 0.49999973, y: 0.35312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc319eb1c81882040b7979c917bc5686
+      internalID: -1731806964411442147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 69
+        width: 28
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5300435, y: 0.27567443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7882927e0a490624aa9e10d6bfb6d314
+      internalID: 2100485915032890151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f214cc8c88dc14396d38e9ee19b99e
+      internalID: -5329633519908855737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd3fe46b90581e4998c2ee768143256
+      internalID: 3315103055402229882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057e833c8fc5ba045af0609bfe4e7275
+      internalID: 6331051639141204471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83880444062431f40a028bf4be385161
+      internalID: 8811963930388518497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b797f6b21a9e8314fa46bbf6f1b96f49
+      internalID: -3517003323671097207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119b741a387ac2747b33bb0a747da573
+      internalID: -774641640415424492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bdbd87131db994d806fb791f243890
+      internalID: -5493555236963459755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: froggrt_assets_1_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2903e9c8b063cc84daaec2e65ce48d2d
+      internalID: 1008274378644797290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
