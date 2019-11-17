@@ -9,6 +9,7 @@ public class ScrollingBody : MonoBehaviour
     private Vector2 newPos1;
     private Vector2 restart;
     public GameObject player;
+    public float moveSpeed = 1;
 
     private void Awake()
     {
@@ -32,32 +33,33 @@ public class ScrollingBody : MonoBehaviour
         //if the rigidbody is rotated, then go the different direction
         if (rb2d.transform.rotation.y == 0f)
         {
-            rb2d.velocity = new Vector2(2.0f, 0);
+            rb2d.velocity = new Vector2(2.0f * moveSpeed, 0);
         }
         else
         {
             //could use 1.5f as a public variable later 
             // so all cars move same speed
-            rb2d.velocity = new Vector2(-2.0f, 0); 
+            rb2d.velocity = new Vector2(-2.0f * moveSpeed, 0); 
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        newPos = new Vector2(-12.0f, rb2d.position.y);
-        newPos1 = new Vector2(12.0f, rb2d.position.y);
+        //use the player restart x position as center for the car restart position
+        //because the player will always be the center of the screen
+        newPos = new Vector2(restart.x - 10.0f, rb2d.position.y);
+        newPos1 = new Vector2(restart.x + 10.0f, rb2d.position.y);
         if (rb2d.transform.rotation.y == 0f)
         {
-            if (rb2d.position.x >= 13f)
+            if (rb2d.position.x >= restart.x + 10.0f)
             {
                 rb2d.position = newPos;
             }
         }
         else
         {
-            if (rb2d.position.x <= -13f)
+            if (rb2d.position.x <= restart.x - 10.0f)
             {
                 rb2d.position = newPos1;
             }

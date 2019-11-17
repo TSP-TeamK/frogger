@@ -674,10 +674,10 @@ TextureImporter:
       name: frogger_sprite_22
       rect:
         serializedVersion: 2
-        x: 2
-        y: 130
-        width: 28
-        height: 28
+        x: 0
+        y: 128
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -695,10 +695,10 @@ TextureImporter:
       name: frogger_sprite_23
       rect:
         serializedVersion: 2
-        x: 34
-        y: 130
-        width: 28
-        height: 28
+        x: 32
+        y: 128
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,10 +716,10 @@ TextureImporter:
       name: frogger_sprite_24
       rect:
         serializedVersion: 2
-        x: 66
-        y: 130
-        width: 28
-        height: 28
+        x: 64
+        y: 128
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -737,10 +737,10 @@ TextureImporter:
       name: frogger_sprite_25
       rect:
         serializedVersion: 2
-        x: 98
-        y: 130
-        width: 28
-        height: 28
+        x: 96
+        y: 128
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -758,10 +758,10 @@ TextureImporter:
       name: frogger_sprite_26
       rect:
         serializedVersion: 2
-        x: 130
-        y: 130
-        width: 28
-        height: 28
+        x: 128
+        y: 128
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -821,10 +821,10 @@ TextureImporter:
       name: frogger_sprite_29
       rect:
         serializedVersion: 2
-        x: 2
-        y: 98
-        width: 28
-        height: 28
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -842,10 +842,10 @@ TextureImporter:
       name: frogger_sprite_30
       rect:
         serializedVersion: 2
-        x: 34
-        y: 98
-        width: 28
-        height: 28
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -863,10 +863,10 @@ TextureImporter:
       name: frogger_sprite_31
       rect:
         serializedVersion: 2
-        x: 66
-        y: 98
-        width: 28
-        height: 28
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -884,10 +884,10 @@ TextureImporter:
       name: frogger_sprite_32
       rect:
         serializedVersion: 2
-        x: 98
-        y: 98
-        width: 28
-        height: 28
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -905,29 +905,8 @@ TextureImporter:
       name: frogger_sprite_33
       rect:
         serializedVersion: 2
-        x: 130
-        y: 98
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9ecdcd2eb88c5c4387a3ba299052b56
-      internalID: -4016709821658663297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frogger_sprite_34
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -937,8 +916,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2b231a828530547a58d27d6f524fd8
-      internalID: -3712408716717520389
+      spriteID: c9ecdcd2eb88c5c4387a3ba299052b56
+      internalID: -4016709821658663297
       vertices: []
       indices: 
       edges: []
