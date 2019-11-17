@@ -8326,7 +8326,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
   m_XDamping: 0
-  m_YDamping: 0
+  m_YDamping: 2
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
@@ -10923,6 +10923,21 @@ PrefabInstance:
         type: 3}
       propertyPath: SceneIndex
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720945972733313095, guid: 0ca5038bb264e6647ad580979a4a0986,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720945972733313095, guid: 0ca5038bb264e6647ad580979a4a0986,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720945972733313095, guid: 0ca5038bb264e6647ad580979a4a0986,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}

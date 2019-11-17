@@ -10,7 +10,7 @@ public class FrogMovement : MonoBehaviour
     private Animator anim;
     private Rigidbody2D body;
 
-    private bool playerMoving;
+    public bool playerMoving;
     private Vector2 lastMove;
 
     public int SceneIndex;
