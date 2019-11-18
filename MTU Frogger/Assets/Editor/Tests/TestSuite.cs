@@ -27,9 +27,10 @@ namespace Tests
             }
 
             //Assert throws a weird error. Need to figure out a different way to make test fail
+            Assert.Greater(xVector, 0.0);
 
             //end test, clean up
-            Object.Destroy(scrolling);
+            Object.DestroyImmediate(scrolling);
         }
     }
 }
