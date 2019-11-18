@@ -21,13 +21,9 @@ namespace Tests
             float xVector = scrolling.getRb2d().velocity.x;
             float yVector = scrolling.getRb2d().velocity.y;
 
-            if(xVector < 0)
-            {
-                xVector *= -1;
-            }
-
             //Assert throws a weird error. Need to figure out a different way to make test fail
-            Assert.Greater(xVector, 0.0);
+            Assert.NotZero(xVector);
+            Assert.Zero(yVector);
 
             //end test, clean up
             Object.DestroyImmediate(scrolling);
