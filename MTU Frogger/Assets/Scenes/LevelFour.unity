@@ -9988,6 +9988,11 @@ PrefabInstance:
       propertyPath: heart3
       value: 
       objectReference: {fileID: 1992165318}
+    - target: {fileID: 3902348310973407676, guid: 0ca5038bb264e6647ad580979a4a0986,
+        type: 3}
+      propertyPath: SceneIndex
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
 --- !u!4 &1329654725 stripped

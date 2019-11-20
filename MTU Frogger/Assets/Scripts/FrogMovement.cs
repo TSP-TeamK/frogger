@@ -27,6 +27,17 @@ public class FrogMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         lives = GlobalVariables.lives;
         updateHearts();
+
+        //Get the level based on the scene
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        if (scene == 5)
+            GlobalVariables.level = 1;
+        else if (scene == 6)
+            GlobalVariables.level = 2;
+        else if (scene == 7)
+            GlobalVariables.level = 3;
+        else //if (scene == 7)
+            GlobalVariables.level = 4;
     }
 
     // Update is called once per frame

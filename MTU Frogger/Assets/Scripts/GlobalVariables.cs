@@ -12,4 +12,5 @@ public static class GlobalVariables
 	public static float respawnY = 0f;
 
     public static int lives = 3;
+    public static int level = 1;
 }

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestLevel.unity
     guid: 2081398cc59ce2d47a115c82323cd677
   - enabled: 1
+    path: Assets/Scenes/LevelTransition.unity
+    guid: 2c7cc0a0a96f8d24db65c7d592be93ac
+  - enabled: 1
     path: Assets/Scenes/LevelOne.unity
     guid: a79e0ac8065c1504b958cdc41aeeb0e4
   - enabled: 1
@@ -32,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelFour.unity
     guid: 89ab4440c8fb5fd448b1cadce24a24a6
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: b11ec609748b0f74081456d29a3ceeaa
   m_configObjects: {}
