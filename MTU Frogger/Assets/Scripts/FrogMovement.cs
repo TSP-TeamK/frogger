@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class FrogMovement : MonoBehaviour
 {
 
@@ -15,10 +16,16 @@ public class FrogMovement : MonoBehaviour
 
     public int SceneIndex;
 
+    private int lives;
+    public Image heart1;
+    public Image heart2;
+    public Image heart3;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        lives = 3;
     }
 
     // Update is called once per frame
@@ -73,5 +80,27 @@ public class FrogMovement : MonoBehaviour
 
         SceneManager.LoadScene(SceneIndex);
 
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("Car") || collision.gameObject.name.Contains("Truck"))
+        {
+            lives--;
+            if (lives == 2)
+            {
+                heart1.enabled = false;
+            }
+            if (lives == 1)
+            {
+                heart2.enabled = false;
+            }
+            if (lives == 0)
+            {
+                heart3.enabled = false;
+                SceneManager.LoadScene(0); // whatever the end screen is
+                                           //end game
+            }
+        }
     }
 }

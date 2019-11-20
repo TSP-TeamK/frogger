@@ -8,8 +8,10 @@ public class ScrollingBody : MonoBehaviour
     private Vector2 newPos;
     private Vector2 newPos1;
     private Vector2 restart;
+
     public GameObject player;
     public float moveSpeed = 1;
+
 
     private void Awake()
     {
@@ -23,7 +25,6 @@ public class ScrollingBody : MonoBehaviour
             player = GameObject.Find("character");
         }
         restart = player.transform.position;
-
     }
 
     public void Start()
@@ -41,6 +42,7 @@ public class ScrollingBody : MonoBehaviour
             // so all cars move same speed
             rb2d.velocity = new Vector2(-2.0f * moveSpeed, 0); 
         }
+        int lives = 3;
     }
 
     // Update is called once per frame
@@ -72,7 +74,7 @@ public class ScrollingBody : MonoBehaviour
         {
             Rigidbody2D character = collision.rigidbody;
             character.position = restart;
-            character.velocity = new Vector2(0, 0);
+            character.velocity = new Vector2(0, 0); 
         }
 
     }
