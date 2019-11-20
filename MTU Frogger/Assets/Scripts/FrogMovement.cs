@@ -25,7 +25,8 @@ public class FrogMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
-        lives = 3;
+        lives = GlobalVariables.lives;
+        updateHearts();
     }
 
     // Update is called once per frame
@@ -70,7 +71,7 @@ public class FrogMovement : MonoBehaviour
     {
         if (collision.gameObject.name == "Edge Tilemap")
         {
-            
+            GlobalVariables.lives = lives; //update lives for next level
             SceneManager.LoadScene(SceneIndex);
         }
     }
@@ -87,20 +88,30 @@ public class FrogMovement : MonoBehaviour
         if (collision.gameObject.name.Contains("Car") || collision.gameObject.name.Contains("Truck"))
         {
             lives--;
-            if (lives == 2)
-            {
-                heart1.enabled = false;
-            }
-            if (lives == 1)
-            {
-                heart2.enabled = false;
-            }
-            if (lives == 0)
-            {
-                heart3.enabled = false;
-                SceneManager.LoadScene(0); // whatever the end screen is
-                                           //end game
-            }
+            updateHearts();
+        }
+    }
+
+    private void updateHearts()
+    {
+        if (lives == 2)
+        {
+            heart1.enabled = false;
+        }
+        if (lives == 1)
+        {
+            heart1.enabled = false;
+            heart2.enabled = false;
+        }
+        if (lives == 0)
+        {
+            heart1.enabled = false;
+            heart2.enabled = false;
+            heart3.enabled = false;
+            SceneManager.LoadScene(0); // whatever the end screen is
+                                       //end game
         }
     }
 }
+
+

@@ -42,7 +42,6 @@ public class ScrollingBody : MonoBehaviour
             // so all cars move same speed
             rb2d.velocity = new Vector2(-2.0f * moveSpeed, 0); 
         }
-        int lives = 3;
     }
 
     // Update is called once per frame
