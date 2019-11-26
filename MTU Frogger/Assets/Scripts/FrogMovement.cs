@@ -119,7 +119,7 @@ public class FrogMovement : MonoBehaviour
             heart1.enabled = false;
             heart2.enabled = false;
             heart3.enabled = false;
-            SceneManager.LoadScene(0); // whatever the end screen is
+            SceneManager.LoadScene(10); // whatever the end screen is
                                        //end game
         }
     }
