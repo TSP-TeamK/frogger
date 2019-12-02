@@ -85,6 +85,12 @@ public class FrogMovement : MonoBehaviour
             GlobalVariables.lives = lives; //update lives for next level
             SceneManager.LoadScene(SceneIndex);
         }
+        //if collide with coin
+        //collect(destroy) coin
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     public void SceneLoader(int SceneIndex)
