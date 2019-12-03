@@ -21,6 +21,22 @@ public class FrogMovement : MonoBehaviour
     public Image heart2;
     public Image heart3;
 
+    private GameObject scoreGUI;
+    private Text scoreV;
+
+    private void Awake()
+    {
+        if (!Application.isEditor)
+        {
+
+        }
+        else
+        {
+
+            PlayerPrefs.SetInt("Score", 0);
+        }
+    }
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -38,6 +54,9 @@ public class FrogMovement : MonoBehaviour
             GlobalVariables.level = 3;
         else //if (scene == 7)
             GlobalVariables.level = 4;
+
+        scoreGUI = GameObject.Find("Score Value");
+        scoreV = scoreGUI.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -71,6 +90,7 @@ public class FrogMovement : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
 
+        updateScore();
     }
 
     public Vector2 getFrogVelocity(Rigidbody2D body)
@@ -80,17 +100,23 @@ public class FrogMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Edge Tilemap")
-        {
-            GlobalVariables.lives = lives; //update lives for next level
-            SceneManager.LoadScene(SceneIndex);
-        }
         //if collide with coin
         //collect(destroy) coin
         if (collision.gameObject.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
+            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
         }
+        if (collision.gameObject.name == "Edge Tilemap")
+        {
+            GlobalVariables.lives = lives; //update lives for next level
+            SceneManager.LoadScene(SceneIndex);
+        }
+    }
+
+    private void updateScore()
+    {
+        scoreV.text = PlayerPrefs.GetInt("Score").ToString();
     }
 
     public void SceneLoader(int SceneIndex)
