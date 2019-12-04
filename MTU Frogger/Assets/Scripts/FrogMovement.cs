@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class FrogMovement : MonoBehaviour
 {
 
@@ -15,10 +16,43 @@ public class FrogMovement : MonoBehaviour
 
     public int SceneIndex;
 
+    private int lives;
+    public Image heart1;
+    public Image heart2;
+    public Image heart3;
+
+    private GameObject scoreGUI;
+    private Text scoreV;
+
+    private void Awake()
+    {
+        //if player is starting on level one, set score to 0
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            PlayerPrefs.SetInt("Score", 0);
+        }
+    }
+
     void Start()
     {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        lives = GlobalVariables.lives;
+        updateHearts();
+
+        //Get the level based on the scene
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        if (scene == 5)
+            GlobalVariables.level = 1;
+        else if (scene == 6)
+            GlobalVariables.level = 2;
+        else if (scene == 7)
+            GlobalVariables.level = 3;
+        else //if (scene == 7)
+            GlobalVariables.level = 4;
+
+        scoreGUI = GameObject.Find("Score Value");
+        scoreV = scoreGUI.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -52,6 +86,7 @@ public class FrogMovement : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
 
+        updateScore();
     }
 
     public Vector2 getFrogVelocity(Rigidbody2D body)
@@ -61,11 +96,23 @@ public class FrogMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //if collide with coin
+        //collect(destroy) coin
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+        }
         if (collision.gameObject.name == "Edge Tilemap")
         {
-            
+            GlobalVariables.lives = lives; //update lives for next level
             SceneManager.LoadScene(SceneIndex);
         }
+    }
+
+    private void updateScore()
+    {
+        scoreV.text = PlayerPrefs.GetInt("Score").ToString();
     }
 
     public void SceneLoader(int SceneIndex)
@@ -74,4 +121,36 @@ public class FrogMovement : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
 
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains("Car") || collision.gameObject.name.Contains("Truck"))
+        {
+            lives--;
+            updateHearts();
+        }
+    }
+
+    private void updateHearts()
+    {
+        if (lives == 2)
+        {
+            heart1.enabled = false;
+        }
+        if (lives == 1)
+        {
+            heart1.enabled = false;
+            heart2.enabled = false;
+        }
+        if (lives == 0)
+        {
+            heart1.enabled = false;
+            heart2.enabled = false;
+            heart3.enabled = false;
+            SceneManager.LoadScene(10); // whatever the end screen is
+                                       //end game
+        }
+    }
 }
+
+

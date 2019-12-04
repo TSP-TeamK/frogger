@@ -142,6 +142,9 @@ MonoBehaviour:
   moveSpeed: 100
   playerMoving: 0
   SceneIndex: 0
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
 --- !u!61 &3902348310973407675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,7 +184,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8347fc4c3eb644747a001fa488cb8fba, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -277,3 +280,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a34143c66358004180bef3b080d3b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundToggle: {fileID: 3302706105990512515, guid: b77ea0ffcbcf3b04087095fca9a06152,
+    type: 3}

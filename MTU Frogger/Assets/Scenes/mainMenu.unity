@@ -643,8 +643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76e482e4a085cb42bf699865dfad1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endMusic: {fileID: 8300000, guid: 423a2e180e85336419151d8c5ced2bc7, type: 3}
   audioSource: {fileID: 628219762}
-  slider: {fileID: 8527847108277363513, guid: eb15fe04b53612244a6cca95e46924d4, type: 3}
 --- !u!82 &628219762
 AudioSource:
   m_ObjectHideFlags: 0
