@@ -26,13 +26,9 @@ public class FrogMovement : MonoBehaviour
 
     private void Awake()
     {
-        if (!Application.isEditor)
+        //if player is starting on level one, set score to 0
+        if (SceneManager.GetActiveScene().buildIndex == 5)
         {
-
-        }
-        else
-        {
-
             PlayerPrefs.SetInt("Score", 0);
         }
     }
