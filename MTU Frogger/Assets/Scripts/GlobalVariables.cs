@@ -10,4 +10,5 @@ public static class GlobalVariables
 	public static float Yvalue = 0f;//holds maximum distance the character can move to the top
 	public static float respawnX = 0f;
 	public static float respawnY = 0f;
+	public static bool L3light = true;
 }

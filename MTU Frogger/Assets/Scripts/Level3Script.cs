@@ -12,6 +12,7 @@ public class Level3Script : MonoBehaviour
 	GlobalVariables.negYvalue = -5f;
 	GlobalVariables.respawnX = 3f;
 	GlobalVariables.respawnY = 6f;
+	StartCoroutine(ExampleCoroutine(5));
     }
 
     // Update is called once per frame
@@ -19,4 +20,19 @@ public class Level3Script : MonoBehaviour
     {
         
     }
+
+IEnumerator ExampleCoroutine(float waitTime)
+    {
+	while (true) {
+      	  	//yield on a new YieldInstruction that waits for 5 seconds.
+        	yield return new WaitForSeconds(waitTime);
+		if (GlobalVariables.L3light) {//light is on
+			GlobalVariables.L3light = false;
+		}
+		else {//light is off
+			GlobalVariables.L3light = true;
+		}
+	}
+    }
+
 }
