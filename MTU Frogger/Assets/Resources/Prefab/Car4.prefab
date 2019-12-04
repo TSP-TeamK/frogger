@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4590760345019021100}
   - component: {fileID: 4590760345019021103}
   - component: {fileID: 4590760345019021102}
-  - component: {fileID: 2134403505256767339}
   - component: {fileID: 4590760345019021097}
   - component: {fileID: 4590760345019021096}
   m_Layer: 10
@@ -106,20 +105,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &2134403505256767339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4590760345019021101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6be25fb222da246bf9820ed403014c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  moveSpeed: 1
 --- !u!114 &4590760345019021097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3902348310973407671, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
-  moveSpeed: 1
 --- !u!61 &4590760345019021096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,7 +135,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.90625}
+    oldSize: {x: 0.875, y: 0.875}
     newSize: {x: 1.06, y: 2.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

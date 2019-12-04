@@ -275,11 +275,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 3902348310958843457}
-    - target: {fileID: 4590760345019021097, guid: 792dbaafee14fa94abbd63418a8ea105,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 792dbaafee14fa94abbd63418a8ea105, type: 3}
 --- !u!1001 &58451853
@@ -364,11 +359,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 3902348310958843457}
-    - target: {fileID: 348784993534027038, guid: 820735ec779ae8947a14fda30075397b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820735ec779ae8947a14fda30075397b, type: 3}
 --- !u!1 &220652163
@@ -8271,16 +8261,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4590760345019021097, guid: 2bd3fe0919af72241a45369052d01865,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 3902348310958843457}
-    - target: {fileID: 4590760345019021097, guid: 2bd3fe0919af72241a45369052d01865,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4590760345019021103, guid: 2bd3fe0919af72241a45369052d01865,
         type: 3}
       propertyPath: m_FlipY
@@ -8291,11 +8271,11 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3405285528639456153, guid: 2bd3fe0919af72241a45369052d01865,
+    - target: {fileID: 4590760345019021097, guid: 2bd3fe0919af72241a45369052d01865,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3902348310958843457}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bd3fe0919af72241a45369052d01865, type: 3}
 --- !u!1 &1679099154
@@ -9723,11 +9703,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 3902348310958843457}
-    - target: {fileID: 4590760345019021097, guid: 6e714839e32426647b7b287bfb7d0ab6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e714839e32426647b7b287bfb7d0ab6, type: 3}
 --- !u!4 &2078124259 stripped
