@@ -6463,6 +6463,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 545711910}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &270539383 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3436079002732852605, guid: 82a5b7f757ece3143850be2bd61dd6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1664987068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &289736160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6644,19 +6656,31 @@ PrefabInstance:
         type: 3}
       propertyPath: heart1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1342279279}
     - target: {fileID: 3902348310973407676, guid: 0ca5038bb264e6647ad580979a4a0986,
         type: 3}
       propertyPath: heart2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 599588983}
     - target: {fileID: 3902348310973407676, guid: 0ca5038bb264e6647ad580979a4a0986,
         type: 3}
       propertyPath: heart3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 270539383}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ca5038bb264e6647ad580979a4a0986, type: 3}
+--- !u!114 &599588983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3436079002647344058, guid: 82a5b7f757ece3143850be2bd61dd6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1664987068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &665588510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6921,6 +6945,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseControl
       objectReference: {fileID: 0}
+    - target: {fileID: 3455586019939403755, guid: 9f9cd160fbe0f174dae21e9540b15f82,
+        type: 3}
+      propertyPath: pausePanel
+      value: 
+      objectReference: {fileID: 1664987069}
     - target: {fileID: 3455586019939403754, guid: 9f9cd160fbe0f174dae21e9540b15f82,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6976,11 +7005,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3455586019939403755, guid: 9f9cd160fbe0f174dae21e9540b15f82,
-        type: 3}
-      propertyPath: pausePanel
-      value: 
-      objectReference: {fileID: 1664987069}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f9cd160fbe0f174dae21e9540b15f82, type: 3}
 --- !u!114 &1190114586 stripped
@@ -7150,6 +7174,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1295091382}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1342279279 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2474205836602483022, guid: 82a5b7f757ece3143850be2bd61dd6b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1664987068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1455342312
 GameObject:
   m_ObjectHideFlags: 0

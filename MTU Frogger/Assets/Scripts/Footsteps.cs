@@ -24,8 +24,8 @@ public class Footsteps : MonoBehaviour
         if (movement.playerMoving == true && movement.moveSpeed > 0.5f
             && GetComponent<AudioSource>().isPlaying == false && PlayerPrefs.GetInt("ToggleSetting") == 1)
         {
-            GetComponent<AudioSource>().volume = Random.Range(0.5f, 1);
-            GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
+            GetComponent<AudioSource>().volume = Random.Range(0.1f, 1.0f);
+            GetComponent<AudioSource>().pitch = Random.Range(1.2f, 2.2f);
             GetComponent<AudioSource>().Play();
         }
         //if toggle setting is off, mute sound effect
