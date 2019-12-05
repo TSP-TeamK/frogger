@@ -102,6 +102,7 @@ public class FrogMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
             PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+            GetComponent<Footsteps>().playCoinSound();
         }
         if (collision.gameObject.name == "Edge Tilemap")
         {
@@ -128,6 +129,7 @@ public class FrogMovement : MonoBehaviour
         {
             lives--;
             updateHearts();
+            GetComponent<Footsteps>().playHitSound();
         }
     }
 
