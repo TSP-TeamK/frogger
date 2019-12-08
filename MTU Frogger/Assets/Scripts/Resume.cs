@@ -24,7 +24,8 @@ public class Resume : MonoBehaviour
         Time.timeScale = 1f;
         PlayerPrefs.DeleteKey("Score");
         PlayerPrefs.DeleteKey("lastLevel");
-        PlayerPrefs.DeleteKey("allLevelCleared");
+        //PlayerPrefs.DeleteKey("allLevelCleared");
+        //PlayerPrefs.DeleteKey("easterLevelUnlocked");
         GlobalVariables.lives = 3;
         SceneManager.LoadScene(5);
     }
@@ -40,5 +41,6 @@ public class Resume : MonoBehaviour
         PlayerPrefs.DeleteKey("Score");
         PlayerPrefs.DeleteKey("lastLevel");
         PlayerPrefs.DeleteKey("allLevelCleared");
+        PlayerPrefs.DeleteKey("easterLevelUnlocked");
     }
 }

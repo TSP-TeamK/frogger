@@ -16,10 +16,11 @@ public class LevelSelect : MonoBehaviour
         {
             PlayerPrefs.SetInt("allLevelCleared", 1);
         }
-        if (PlayerPrefs.GetInt("Score") >= 500)
+        if (PlayerPrefs.GetInt("Score") >= 500 || PlayerPrefs.GetInt("easterLevelUnlocked") == 1)
         {
             button.gameObject.SetActive(true);
             tryEasterEggLevel.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("easterLevelUnlocked", 1);
         }
         if (PlayerPrefs.GetInt("allLevelCleared") == 1)
         {

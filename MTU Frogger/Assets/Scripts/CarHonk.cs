@@ -41,7 +41,7 @@ public class CarHonk : MonoBehaviour
                     //randomly play car noises
                     if (Random.Range(1.0f, 50.0f) < 25)
                     {
-                        GetComponent<AudioSource>().volume = Random.Range(0.6f, 1.0f);
+                        GetComponent<AudioSource>().volume = Random.Range(0.4f, 0.8f);
                         GetComponent<AudioSource>().pitch = Random.Range(0.95f, 1.0f);
                         GetComponent<AudioSource>().Play();
                     }
