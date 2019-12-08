@@ -19,6 +19,15 @@ public class CarHonk : MonoBehaviour
         timeToGo = Time.fixedTime + Random.Range(1.0f, 3.0f);
     }
 
+    private void Update()
+    {
+        //if toggle setting is off, mute sound effect
+        if (PlayerPrefs.GetInt("ToggleSetting") == 0)
+        {
+            GetComponent<AudioSource>().Stop();
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

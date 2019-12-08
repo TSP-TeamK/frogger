@@ -30,6 +30,7 @@ public class FrogMovement : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             PlayerPrefs.SetInt("Score", 0);
+            GlobalVariables.lives = 3;
         }
     }
 

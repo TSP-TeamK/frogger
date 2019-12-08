@@ -11,15 +11,34 @@ public class Resume : MonoBehaviour
         SceneManager.LoadScene(PlayerPrefs.GetInt("lastLevel"));
         Time.timeScale = 1f;
     }
+
     //for level select buttons
     public void levelSelect()
     {
         Time.timeScale = 1f;
     }
+
+    //for start new game button
     public void StartNewGame()
     {
         Time.timeScale = 1f;
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("Score");
+        PlayerPrefs.DeleteKey("lastLevel");
+        PlayerPrefs.DeleteKey("allLevelCleared");
+        GlobalVariables.lives = 3;
         SceneManager.LoadScene(5);
+    }
+
+    //for quit button
+    public void quitGame()
+    {
+        Application.Quit();
+    }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteKey("Score");
+        PlayerPrefs.DeleteKey("lastLevel");
+        PlayerPrefs.DeleteKey("allLevelCleared");
     }
 }
