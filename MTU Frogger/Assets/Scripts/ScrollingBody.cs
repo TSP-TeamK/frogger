@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ScrollingBody : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private Vector2 newPos;
     private Vector2 newPos1;
     private Vector2 restart;
+
     public GameObject player;
     public float moveSpeed = 1;
+
 
     private void Awake()
     {
@@ -23,7 +26,6 @@ public class ScrollingBody : MonoBehaviour
             player = GameObject.Find("character");
         }
         restart = player.transform.position;
-
     }
 
     public void Start()
@@ -72,7 +74,7 @@ public class ScrollingBody : MonoBehaviour
         {
             Rigidbody2D character = collision.rigidbody;
             character.position = restart;
-            character.velocity = new Vector2(0, 0);
+            character.velocity = new Vector2(0, 0); 
         }
 
     }
