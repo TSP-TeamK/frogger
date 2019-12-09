@@ -14,17 +14,17 @@ public class ScrollingBody : MonoBehaviour
     public float moveSpeed = 1;
 
 
-    private void Awake()
+    public void Awake()
     {
         //stores the player initial position as the restart position
         if (player == null)
         {
             player = Instantiate(Resources.Load<GameObject>("Prefab/character"));
         }
-        else
-        {
-            player = GameObject.Find("character");
-        }
+       // else
+       // {
+       //     player = GameObject.Find("character");
+       // }
         restart = player.transform.position;
     }
 
@@ -46,7 +46,7 @@ public class ScrollingBody : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //use the player restart x position as center for the car restart position
         //because the player will always be the center of the screen
@@ -68,7 +68,7 @@ public class ScrollingBody : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "character")
         {
@@ -84,4 +84,19 @@ public class ScrollingBody : MonoBehaviour
         return rb2d;
     }
 
+
+    public Vector2 getRestartPos()
+    {
+        return restart;
+    }
+
+    public void setRb2d(Rigidbody2D rigid)
+    {
+        rb2d = rigid;
+    }
+
+    public GameObject getPlayer()
+    {
+        return player;
+    }
 }

@@ -341,11 +341,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ead08d8221a87245831e67683e9aca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  husky1: {fileID: 0}
-  husky2: {fileID: 0}
-  husky3: {fileID: 0}
-  husky4: {fileID: 0}
-  husky5: {fileID: 0}
+  husky1: {fileID: 21300000, guid: aca757cfeddc19249bca9b093f70a307, type: 3}
+  husky2: {fileID: 21300000, guid: 9f093d06b83750441bd9f5729a3b06cf, type: 3}
+  husky3: {fileID: 21300000, guid: 0f038e30e7db0264db52c267951b4d48, type: 3}
+  husky4: {fileID: 21300000, guid: 75493ab5dfcac2b46bbf65e7d1c09a4e, type: 3}
+  husky5: {fileID: 21300000, guid: b4e2852ef919043469c3b0c266637ca6, type: 3}
 --- !u!4 &638214248
 Transform:
   m_ObjectHideFlags: 0
