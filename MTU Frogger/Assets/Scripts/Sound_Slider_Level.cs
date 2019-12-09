@@ -20,7 +20,7 @@ public class Sound_Slider_Level : MonoBehaviour
         text.text = ((int)(slider.value * 100)).ToString() + "%";
     }
 
-    private void Start()
+    public void Start()
     {
         text.text = PlayerPrefs.GetFloat("SoundSliderVolume").ToString() + "%";
         slider.GetComponent<Slider>().value = (PlayerPrefs.GetFloat("SoundSliderVolume"))/100;
@@ -31,4 +31,13 @@ public class Sound_Slider_Level : MonoBehaviour
         PlayerPrefs.SetFloat("SoundSliderVolume", (int)(slider.value * 100));
     }
 
+    public Text getText()
+    {
+        return text;
+    }
+
+    public Slider getSlider()
+    {
+        return slider;
+    }
 }

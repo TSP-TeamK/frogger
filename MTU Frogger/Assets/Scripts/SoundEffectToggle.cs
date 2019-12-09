@@ -9,7 +9,7 @@ public class SoundEffectToggle : MonoBehaviour
     public Toggle toggle;
     public GameObject player;
 
-    void Start()
+    public void Start()
     {
         //set sound effect on when game starts
         if (PlayerPrefs.GetInt("ToggleSetting") == 1)
@@ -48,4 +48,13 @@ public class SoundEffectToggle : MonoBehaviour
         }
     }
 
+    public Toggle getToggle()
+    {
+        return toggle;
+    }
+
+    public Text getText()
+    {
+        return text;
+    }
 }

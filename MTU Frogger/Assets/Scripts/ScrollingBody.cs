@@ -68,14 +68,18 @@ public class ScrollingBody : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    public void OnCollisionEnter2D(Collision2D collision)
+    public bool OnCollisionEnter2D(Collision2D collision)
     {
+        bool success = false; //purely for testing
         if (collision.gameObject.name == "character")
         {
             Rigidbody2D character = collision.rigidbody;
             character.position = restart;
-            character.velocity = new Vector2(0, 0); 
+            character.velocity = new Vector2(0, 0);
+            success = true;
         }
+
+        return success;
 
     }
 
