@@ -35,8 +35,9 @@ public class Footsteps : MonoBehaviour
         //if toggle setting is off, mute sound effect
         if (PlayerPrefs.GetInt("ToggleSetting") == 0)
         {
-            footstep.volume = 0;
-            hit.volume = 0;
+            footstep.Stop();
+            hit.Stop();
+            coin.Stop();
         }
     }
 

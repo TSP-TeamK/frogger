@@ -26,10 +26,11 @@ public class FrogMovement : MonoBehaviour
 
     private void Awake()
     {
-        //if player is starting on level one, set score to 0
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        //if player is starting on easter egg level, set score to 0
+        if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             PlayerPrefs.SetInt("Score", 0);
+            GlobalVariables.lives = 3;
         }
     }
 
@@ -51,8 +52,11 @@ public class FrogMovement : MonoBehaviour
         else //if (scene == 7)
             GlobalVariables.level = 4;
 
+        //set score
         scoreGUI = GameObject.Find("Score Value");
         scoreV = scoreGUI.GetComponent<Text>();
+        //save scene index for resume purpose
+        PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
     }
 
     // Update is called once per frame
