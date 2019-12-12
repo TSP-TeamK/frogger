@@ -21,10 +21,10 @@ public class ScrollingBody : MonoBehaviour
         {
             player = Instantiate(Resources.Load<GameObject>("Prefab/character"));
         }
-       // else
-       // {
-       //     player = GameObject.Find("character");
-       // }
+        else
+        {
+            player = GameObject.Find("character");
+        }
         restart = player.transform.position;
     }
 

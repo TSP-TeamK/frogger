@@ -13,9 +13,44 @@ public class Resume : MonoBehaviour
     }
 
     //for level select buttons
-    public void levelSelect()
+    public void levelSelect1()
     {
+        SceneManager.LoadScene(5);
         Time.timeScale = 1f;
+        PlayerPrefs.SetInt("Score", 0);
+        GlobalVariables.lives = 3;
+    }
+
+    public void levelSelect2()
+    {
+        SceneManager.LoadScene(6);
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("Score", 0);
+        GlobalVariables.lives = 3;
+    }
+
+    public void levelSelect3()
+    {
+        SceneManager.LoadScene(7);
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("Score", 0);
+        GlobalVariables.lives = 3;
+    }
+
+    public void levelSelect4()
+    {
+        SceneManager.LoadScene(8);
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("Score", 0);
+        GlobalVariables.lives = 3;
+    }
+
+    public void levelSelectTenacity()
+    {
+        SceneManager.LoadScene(11);
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("Score", 0);
+        GlobalVariables.lives = 3;
     }
 
     //for start new game button
