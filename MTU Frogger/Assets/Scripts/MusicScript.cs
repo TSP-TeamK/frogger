@@ -57,6 +57,10 @@ public class MusicScript : MonoBehaviour
             audioSource.clip = endMusic[0] as AudioClip;
             audioSource.Play();
         }
+        if (SceneManager.GetActiveScene().buildIndex == 9) //if we are at the losing screen
+        {
+            audioSource.Stop();
+        }
 
     }
 
